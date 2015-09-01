@@ -128,7 +128,7 @@ Publishing maps can be as simple as getting the sharable URL. The interface also
 
 # Introduction to SQL
 
-SQL stands for Structured Query Language and is used to work with large datasets. We're using a dialect of SQL called [PostgreSQL](http://www.postgresql.org/docs/9.4/interactive/index.html). It's a more powerful version of SQL. To make PostgreSQL know about maps and geospatial things, we use an extention called [PostGIS](http://postgis.net/).
+SQL stands for Structured Query Language and is used to work with large datasets. We're using a dialect of SQL called [PostgreSQL](http://www.postgresql.org/docs/9.4/interactive/index.html). It's a more powerful version of SQL. To make PostgreSQL know about maps and geospatial things, we use an extention called [PostGIS](http://postgis.net/). If that doesn't make any sense, don't worry! It's all a bunch of acronyms! The takeaway is we're using a standard flavor of SQL that knows about maps.
 
 ## Operators
 
@@ -241,9 +241,11 @@ SELECT count(*) FROM postoffices_ne
 SELECT count(*) FROM postoffices_ne WHERE yr_est > 1880
 ````
 
-Let's import some new data for this, **rename the table to `inspection_data`.
+Let's import some new data for this, NYC restaurant inspection data.
 
 * NYC Restaurant reviews (download it in xls format) — https://nycopendata.socrata.com/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/xx67-kt59
+
+Drag this into CartoDB and rename the table to `inspection_data`.
 
 One of the most powerful abilities of SQL is to `GROUP BY` different elements in your data.
 
