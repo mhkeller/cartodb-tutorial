@@ -149,7 +149,7 @@ Click on the `SQL` tab we can start doing some basic querying.
 
 ##### Filtering: `WHERE`
 
-SQL can filter using the `WHERE` command.
+SQL can filter using the `WHERE` command. These commands can be read like a sentence, subsitituing the `*` for the words "all columns". For example, the first one would read as "Select all columns from our postoffices_ne spreadsheet where the year is less than 1860."
 
 ````sql
 SELECT * FROM postoffices_ne WHERE yr_est < 1860
